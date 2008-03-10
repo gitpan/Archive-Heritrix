@@ -7,7 +7,7 @@ use Compress::Zlib;
 use File::Find;
 use HTTP::Response;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 sub new {
   my ( $class, %arg ) = @_;

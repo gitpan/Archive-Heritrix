@@ -5,7 +5,7 @@
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test::More tests => 71;
+use Test::More tests => 90;
 BEGIN { use_ok('Archive::Heritrix') };
 
 #########################
@@ -21,8 +21,8 @@ while ( my $rec = $arc->next_record() ) {
   ok( $rec );
 }
 
-#$arc = Archive::Heritrix->new( directory => 'eg' );
-#ok( $arc );
-#while ( my $rec = $arc->next_record() ) {
-#  ok( $rec );
-#}
+$arc = Archive::Heritrix->new( directory => 'eg' );
+ok( $arc );
+while ( my $rec = $arc->next_record() ) {
+  ok( $rec );
+}
